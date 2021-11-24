@@ -32,8 +32,8 @@ process.on('unhandledRejection',(err)=>{
     console.log("Server is terminating  ... ")
     server.close(()=>{
         process.exit();
-    })
-})
+    });
+});
 
 // Connecting to Database
 connectDatabase()
